@@ -49,7 +49,6 @@ when 'windows'
       options "/L*v install.log /qn NR_LICENSE_KEY=#{license}"
       action node['newrelic']['server_monitor_agent']['agent_action']
       version node['newrelic']['server_monitor_agent']['windows_version']
-      checksum node['newrelic']['server_monitor_agent']['windows64_checksum']
     end
   else
     windows_package 'New Relic Server Monitor' do
@@ -57,7 +56,6 @@ when 'windows'
       options "/L*v install.log /qn NR_LICENSE_KEY=#{license}"
       action node['newrelic']['server_monitor_agent']['agent_action']
       version node['newrelic']['server_monitor_agent']['windows_version']
-      checksum node['newrelic']['server_monitor_agent']['windows32_checksum']
     end
   end
 
