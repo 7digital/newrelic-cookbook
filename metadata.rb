@@ -11,6 +11,7 @@ version '2.5.1'
 end
 
 depends 'python'
+depends 'windows'
 
 recommends 'curl'
 
